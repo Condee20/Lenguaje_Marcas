@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="icon" type="image/png" sizes="16x16" href="Img/avion_favicon.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+		<meta charset="UTF-8" />
+		<title>Práctica 6_4</title>
+	</head>
+	<body>
+	<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+	<p><strong><em><u>Rellena tus datos</u></em></strong>
+		<table bgcolor="#F39C12" width="40%">
+			<tr>
+				<td>
+					<fieldset>
+						<legend><strong>Datos Personales</strong></legend>
+						<fieldset>
+							<legend><strong>Provincia</strong></legend>
+							<select name="Provincia">
+								<optgroup label="Extremadura">
+									<option>Badajoz</option>
+									<option>Caceres</option>
+								</optgroup>
+								<optgroup label="Andalucía">
+									<option>Sevilla</option>
+									<option>Córdoba</option>
+									<option>Granada</option>
+									<option>Málaga</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<legend><strong>Fecha de nacimiento</strong></legend>
+							<input type="date">
+						</fieldset>
+						<fieldset>
+							<legend><strong>Temas de interés</strong></legend>
+							<br>
+							<select name="TemaInterés" size="5">
+								<option>Adminitración de base de datos</option>
+								<option>Analiís y programación</option>
+								<option>Arquitectura</option>
+								<option>Calidad</option>
+								<option>ERP, CRM, Business intelligence</option>
+								<option value="PAR">Planificación y administración de redes</option>
+								<option value="FUNHAR">Fundamentos de Hardware</option>
+							</select>
+						</fieldset>
+						<br>
+						<details>
+							<summary>Opciones</summary>
+							<input type="Checkbox" name="Ofertas" checked><p>Enviar ofertas y promociones a mi dirección de e-mail.</p>
+						</details>
+						<hr>
+					</fieldset>
+					<input type="submit">
+					<input type="reset" value="Borrar">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

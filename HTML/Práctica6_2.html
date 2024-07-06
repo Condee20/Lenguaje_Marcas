@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Práctica6_2</title>
+</head>
+<body>
+	<h1>Restaurante el centollín</h1>
+	<hr>
+	<hr>
+	<h3> Haz tu reserva </h3>
+	<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+		<table height="400px" width="36%" bgcolor="#FF8B03">
+			<tr>
+				<td>Nombre:(requerido)</td>
+				<td width="200px"><input type="text" name="Nombre" required></td>
+				<td rowspan="3" width="100px"><a href="https://www.tripadvisor.es/LocationPhotoDirectLink-g187451-d23150301-i483832366-Gastrochigre-Gijon_Asturias.html" target="blank"><img src="https://eltossaldelesgarrigues.com/wp-content/uploads/2019/07/receta1.jpg" height="100px" alt="Centollo"></a></td>
+			</tr>
+			<tr>
+				<td>Correo electrónico:(requerido)</td>
+				<td><input type="email" name="Correo_Electónico" required></td>
+			</tr>
+			<tr>
+				<td>Teléfono:(requerido)</td>
+				<td><input type="tel" name="Teléfono" required></td>
+			</tr>
+			<tr>
+				<td>Fecha de reserva:</td>
+				<td><input type="date" name="Fecha_Reserva" required></td>
+			</tr>
+			<tr>
+				<td>Franja Horaria(de 13:00 a 16:00)</td>
+				<td><input type="time" name="Hora_Reserva" min="13" max="16"></td>
+			</tr>
+			<tr>
+				<td>Comensales(min 1, max 10):</td>
+				<td><input type="number" name="Comensales" min="1" max="10"></td>
+			</tr>
+			<tr>
+				<td>Color del mantel</td>
+				<td><input type="color" name="Color_Mantel" ></td>
+			</tr>
+			<tr>
+				<td>Demandas especiales</td>
+				<td><textarea rows="2" name="Damandas" Placeholder="Alergias, tronas, ..."></textarea></td>
+			</tr>
+			<tr>
+				<td><img src="https://www.pngall.com/wp-content/uploads/8/Restaurant-Logo-PNG-High-Quality-Image.png" height="30px" alt="Logo_restaurante"></td>
+				<td><input type="submit" value="Enviar"></td>
+			</tr>
+		</table>
+	</form>
+	<hr>
+	<hr>
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Práctica 6_5</title>
+	</head>
+	<body>
+	<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+		<table width="25%" bgcolor="#026918">
+			<tr> 
+				<td><h1>Formulario</h1></td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%" bgcolor="#00AD1C">
+						<tr>
+							<td width="50%">Nombre:</td>
+							<td><input type="text" name="nombre" size="30" autofocus required></td>
+						</tr>
+						<tr>
+							<td>Películas:</td>
+							<td><input name="Peliculas" list="ListaPeliculas" size="30">
+								<datalist id="ListaPeliculas">
+									<option value="El asesiono entre en el aula">
+									<option value="La huida de los alumno">
+									<option value="George de la jungla">
+									<option value="Dora la exploradora">
+								</datalist>
+							</td>
+						</tr>
+						<tr>
+							<td>URL:</td>
+							<td><input type="url" name="Url" size="30" placeholder="Escribe un URL"></td>
+						</tr>
+						<tr>
+							<td>Mail:</td>
+							<td><input type="email" name="Mail" size="30" placeholder="Escribe una dirección de correo"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%" bgcolor="#00AD1C">
+						<tr>
+							<td width="50%">Fecha:</td>
+							<td><input type="date" name="Fecha" size="30"></td>
+						</tr>
+						<tr>
+							<td>Hora:</td>
+							<td><input type="time" name="Hora" min="08:00" max="15:00" size="30"></td>
+						</tr>
+						<tr>
+							<td>Mes:</td>
+							<td><input type="month" name="Mes" size="30"></td>
+						</tr>
+						<tr>
+							<td>Semana:</td>
+							<td><input type="week" name="Semana" min="2022-W02" max="2022-W52" step="2"></td>
+						</tr>
+						<tr>
+							<td>Número (minimo 1, máximo 10)</td>
+							<td><input type="number" name="Numero" min="1" max="10" value="0" size="30"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%" bgcolor="#00AD1C">
+						<tr>
+							<td width="50%">Teléfono:</td>
+							<td><input type="tel" name="Telefono" placeholder="000000000" pattern="[0-9]{9}"><hr></td>
+						</tr>
+						<tr>
+							<td>Elige la mayor titulación que tienes:</td>
+							<td><input type="radio" name="Titulo" value="ESO">ESO<br>
+								<input type="radio" name="Titulo" value="CGM">Ciclo de grado medio<br>
+								<input type="radio" name="Titulo" value="CGS">Ciclo de grado superior<hr></td>
+						</tr>
+						<tr>
+							<td>Elige el color/es favorito:</td>
+							<td><hr><input type="checkbox" name="Color" value="Azul">Azul
+								<input type="checkbox" name="Color" value="Verde">Verde<br>
+								<input type="checkbox" name="Color" value="Rojo">Rojo
+								<input type="checkbox" name="Color" value="Amarillo">Amarillo<hr></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<input type="submit">
+		<input type="reset" value="Borrar">
+	</body>
+</html>

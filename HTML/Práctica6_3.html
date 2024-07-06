@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title> Practica 6_3 </title>
+	</head>
+	<body bgcolor="#002DD5">
+		<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+			<h3>Datos personales</h3>
+			<table height="120px" bgcolor="#C58FDE">
+				<tr>
+					<td>Nombre</td>
+					<td><input type="text" name="Nombre" placeholder="Tu nombre" size="25" autofocus /></td>
+				</tr>
+				<tr>
+					<td>E-mail</td>
+					<td><input type="email" name="E-mail" placeholder="ejemplo@prueba.es" size="25"/></td>
+				</tr>
+				<tr>
+					<td>Provincia</td>
+					<td><input type="text" name="Provincia" size="25" required /></td>
+				</tr>
+			</table>
+			<hr>
+			<h3>Estudios</h3>
+			<select name="Estudios">
+				<optgroup label="Básicos">
+					<option>ESO</option>
+					<option>Bachillerato</option>
+					<option>Ciclos formativos</option>
+					<option>PCPI</option>
+				</optgroup>
+				<optgroup label="Universitarios">
+					<option>Medios</option>
+					<option>Superiores</option>
+				</optgroup>
+			</select>
+			<hr>
+			<table>
+				<tr>
+					<td width="40%">
+						<fieldset>
+						<legend><strong>País</strong></legend>
+						<select size="4">
+							<option>España</option>
+							<option>México</option>
+							<option>Argentina</option>
+							<option>Costa Rica</option>
+							<option>Republica Dominicana</option>
+							<option>Chile</option>
+							<option>Portugal</option>
+							<option>Francia</option>
+							<option>Italia</option>
+						</select>
+						</fieldset>
+					</td>
+					<td width="40%">
+						<fieldset>
+						<legend><strong>Aficines</strong></legend>
+						<input type="checkbox" name="Cine"/><span>Cine</span><br>
+						<input type="checkbox" name="Deporte"/><span>Deporte</span><br>
+						<input type="checkbox" name="Lectura"/><span>Lectura</span><br>
+						<input type="checkbox" name="Otros"/><span>Otros</span>
+						</fieldset>
+					</td>
+				</tr>
+			</table>
+			<hr>
+			<h3>Género</h3>
+				<input type="radio" name="Genero" value="Hombre"/><span>Hombre</span>
+				<input type="radio" name="Genero" value="Mujer"/><span>Mujer</span><br>
+			<h3>Observaciones</h3>
+				<textarea name="Observaciones" rows="3" cols="50"></textarea><br>
+		<input type="submit">
+		<input type="reset" value="Borrar">
+		</form>
+	</body>
+</html>
